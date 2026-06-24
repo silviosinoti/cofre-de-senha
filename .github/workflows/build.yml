@@ -18,6 +18,9 @@ jobs:
       with:
         python-version: 3.8
 
+    - name: Instalar PyInstaller
+      run: pip install pyinstaller==5.13.2
+
     - name: Instalar dependências
       run: pip install requests PySimpleGUI
 
@@ -30,5 +33,5 @@ jobs:
     - name: Salvar executável
       uses: actions/upload-artifact@v4
       with:
-        name: programa2
+        name: programa
         path: dist/*.exe
