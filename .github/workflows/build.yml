@@ -24,7 +24,7 @@ jobs:
     - name: Instalar PyInstaller
       run: pip install pyinstaller==5.13.2
 
-    - name: Gerar executável
+    - name: Fazer executável
       run: pyinstaller --onefile --noconsole --hidden-import PySimpleGUI Passwords4.py
 
     - name: Salvar executável
